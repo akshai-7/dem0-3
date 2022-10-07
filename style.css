@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+  background-color: burlywood;
+    background-size: cover;
+
+    background-position: center;
+
+}
+@media only screen and (max-width: 700px) {
+    body {
+        background-color: greenyellow;
+    }
+
+
+}
+
+.menubar{
+    display: flex;
+    background-color:transparent;
+}
+
+ .menubar ul{
+    display:flex;
+    flex-direction:row;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20%;
+    
+}
+ .menubar ul li{
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+
+
+}
+
+.menubar ul li a{
+    text-decoration: none;
+    color:aqua;
+    font-style: italic;
+}
+ 
+@media only screen and (max-width: 700px) {
+    .menubar ul li a{
+        color: red;
+    }
+}
+.menubar ul li:hover{
+    background-color:rgb(37, 36, 36);
+    border-radius: 10px;
+
+
+}
+.submenu{
+    display: none;
+}
+.menubar ul li:hover .submenu{
+    display: block;
+    position: absolute;
+    background:transparent;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menubar ul li:hover .submenu ul{
+    display: block;
+    margin: 10px;
+}
+.menubar ul li:hover .submenu ul li{
+    width:150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background:transparent;
+    text-align: left;
+    font-weight: bold;
+color: #fff;
+
+}
+.menubar ul li:hover .submenu ul li:last-child {
+    border-bottom: none;
+}
